@@ -9,10 +9,11 @@ abstract class Empleado {
     private int cantidadIdiomas;
     private String nivel;
     private String[] habilidadesTecnicas;
+    private String industria;
 
 
     public class Empleado(int idEmpleado, String nombre, String rol, double salarioBase, double boificacion,
-                          String nivelJerarquico, int cantidadIdiomas, String nivel, String[] habilidadesTecnicas) {
+                          String nivelJerarquico, int cantidadIdiomas, String nivel, String[] habilidadesTecnicas, String industria) {
         this.idEmpleado =idEmpleado;
         this.nombre =nombre;
         this.rol=rol;
@@ -22,5 +23,6 @@ abstract class Empleado {
         this.cantidadIdiomas=cantidadIdiomas;
         this.nivel=nivel;
         this.habilidadesTecnicas =habilidadesTecnicas;
+        this.industria=industria;
     }
 }
