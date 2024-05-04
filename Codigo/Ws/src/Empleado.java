@@ -1,5 +1,5 @@
-
-abstract class Empleado {
+abstract class Empleados{
+    //atributos
     private int idEmpleado;
     private String nombre;
     private String rol;
@@ -11,9 +11,8 @@ abstract class Empleado {
     private String[] habilidadesTecnicas;
     private String industria;
 
-
-    public class Empleado(int idEmpleado, String nombre, String rol, double salarioBase, double boificacion,
-                          String nivelJerarquico, int cantidadIdiomas, String nivel, String[] habilidadesTecnicas, String industria) {
+//constructor
+public class Empleado(int idEmpleado, String nombre, String rol, double salarioBase, double boificacion, String nivelJerarquico, int cantidadIdiomas, String nivel, String[] habilidadesTecnicas, String industria) {
         this.idEmpleado =idEmpleado;
         this.nombre =nombre;
         this.rol=rol;
