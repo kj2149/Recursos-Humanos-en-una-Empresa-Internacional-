@@ -36,40 +36,40 @@ public class Main {
         Servicios.agregarEmpleados(empleado8);
 
         //Obtención cantidad de empleados por industria
-        /*System.out.println("Cantidad de empleados en Tecnologia: " + Tecnologia.obtenerEmpleadosPorIndustria());
+        System.out.println("Cantidad de empleados en Tecnologia: " + Tecnologia.obtenerEmpleadosPorIndustria());
         System.out.println("Cantidad de empleados en Finanzas: " + Finanzas.obtenerEmpleadosPorIndustria());
         System.out.println("Cantidad de empleados en Manufactura: " + Manufactura.obtenerEmpleadosPorIndustria());
         System.out.println("Cantidad de empleados en Servicios: " + Servicios.obtenerEmpleadosPorIndustria());
-        */
+        System.out.println();
 
         //Obtención del salario individual
-        /*System.out.println("$"+empleado1.salarioEmpleado());
-        System.out.println("$"+empleado2.salarioEmpleado());
-        System.out.println("$"+empleado3.salarioEmpleado());
-        System.out.println("$"+empleado4.salarioEmpleado());
-        System.out.println("$"+empleado5.salarioEmpleado());
-        System.out.println("$"+empleado6.salarioEmpleado());
-        System.out.println("$"+empleado7.salarioEmpleado());
-        System.out.println("$"+empleado8.salarioEmpleado());
-        */
+        System.out.println("Salario de " + empleado1.getNombre() + " $"+ empleado1.salarioEmpleado());
+        System.out.println("Salario de " + empleado2.getNombre() + " $"+ empleado2.salarioEmpleado());
+        System.out.println("Salario de " + empleado3.getNombre() + " $"+ empleado3.salarioEmpleado());
+        System.out.println("Salario de " + empleado4.getNombre() + " $"+ empleado4.salarioEmpleado());
+        System.out.println("Salario de " + empleado5.getNombre() + " $"+ empleado5.salarioEmpleado());
+        System.out.println("Salario de " + empleado6.getNombre() + " $"+ empleado6.salarioEmpleado());
+        System.out.println("Salario de " + empleado7.getNombre() + " $"+ empleado7.salarioEmpleado());
+        System.out.println("Salario de " + empleado8.getNombre() + " $"+ empleado8.salarioEmpleado());
+        System.out.println();
 
         //Obtención de la nómina mensual por industria
         System.out.println("Nómina mensual Tecnología: $" + Tecnologia.obtenerCostoNominaPorIndustria());
         System.out.println("Nómina mensual Finanzas: $" + Finanzas.obtenerCostoNominaPorIndustria());
         System.out.println("Nómina mensual Manufactura: $" + Manufactura.obtenerCostoNominaPorIndustria());
         System.out.println("Nómina mensual Servicios: $" + Servicios.obtenerCostoNominaPorIndustria());
-
-
+        System.out.println();
 
         //Obtención de la información de los empleados
-        /*System.out.println(empleado1.obtenerInformacionEmpleado());
+        System.out.println(empleado1.obtenerInformacionEmpleado());
         System.out.println(empleado3.obtenerInformacionEmpleado());
         System.out.println(empleado5.obtenerInformacionEmpleado());
         System.out.println(empleado7.obtenerInformacionEmpleado());
-        System.out.println();*/
+        System.out.println();
 
         //Obtención cantidad de empleados totales de la empresa
         Multinacional1.obtenerEmpleadosTotales();
+        System.out.println();
 
         //Obtención de la nómina mensual total de la empresa
         Multinacional1.obtenerCostoNominaTotal();
