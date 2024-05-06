@@ -1,31 +1,38 @@
 public class Empresa {
-    //atributos
+
     private String nombre;
-    private int cantidadEmpleados;
-    private String industrias[];
-    private String distribucionGeografica;
+    private int cantidadIndustrias=0;
+    private Industria[] industrias;
 
-    //constructor
-    public Empresa(String nombre, int cantidadEmpleados, String industrias[], String distribucionGeografica) {
+    public Empresa(String nombre) {
         this.nombre = nombre;
-        this.cantidadEmpleados = cantidadEmpleados;
-        this.industrias = industrias;
-        this.distribucionGeografica = distribucionGeografica;
+        this.industrias = new Industria[4];
     }
 
-    //metodos
-    public int obtenerEmpleadosTotales(){
-        return cantidadEmpleados;
-
-
+    public void agregarIndustrias(Industria industria){
+        if (this.cantidadIndustrias <= industrias.length){
+            this.industrias[cantidadIndustrias] = industria;
+            cantidadIndustrias++;
+        }else {
+            System.out.println("-- No se permiten más industrias --");
+        }
     }
 
-    public double calcularCostoNominaTotal(double salario){
-        return cantidadEmpleados * salario;
+    public void obtenerEmpleadosTotales(){
+        int suma=0;
 
+        for (int i=0; i<=3; i++){
+            suma += industrias[i].obtenerEmpleadosPorIndustria();
+        }
+        System.out.println("Cantidad total de empleados en la empresa: "+suma);
     }
 
-    public String DistribucionGeografica() {
-        return distribucionGeografica;
+    public void obtenerCostoNominaTotal(){
+        double suma=0;
+
+        for (int i=0; i<=3; i++){
+            suma += industrias[i].obtenerCostoNominaPorIndustria();
+        }
+        System.out.println("Nomina mensual total de la empresa: $"+suma);
     }
 }
